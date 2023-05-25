@@ -28,7 +28,11 @@ public class MatricadNGTest {
 
     @Test
     public void testMatricad2() {
-        Matricad instance = new Matricad(null);
+        try {
+            Matricad instance = new Matricad(null);
+            fail("No es null");
+        } catch (IllegalArgumentException e) {
+        }
     }
 
     @Test
