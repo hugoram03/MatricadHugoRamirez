@@ -18,10 +18,25 @@ public class MatricadNGTest {
     public MatricadNGTest() {
         String nulo = null;
         String[] vacio = new String[5];
-        String[] prueba = {"hola", "que", "tal", "como", "estas", "hola"};
-        
     }
 
+    @Test
+    public void testMatricad() {
+        String[] prueba = {"hola", "que", "tal", "como", "estas", "hola"};
+        Matricad instance = new Matricad(prueba);
+    }
+
+    @Test
+    public void testMatricad2() {
+        Matricad instance = new Matricad(null);
+    }
+
+    @Test
+    public void testMatricad3() {
+        String[] vacio = new String[5];
+        Matricad instance = new Matricad(vacio);
+    }
+    
     /**
      * Test of getCantidadCadenasQueEmpiezanCon method, of class Matricad.
      */
